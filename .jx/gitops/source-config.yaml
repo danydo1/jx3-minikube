@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: app1
     - name: jx3-minikube
     scheduler: in-repo
   slack:
