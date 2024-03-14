@@ -12,6 +12,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - danydo1/app1-new
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - danydo1/jx3-minikube
       require_self_approval: true
     cat: {}
@@ -29,6 +33,11 @@ data:
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
+      danydo1/app1-new:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
       danydo1/jx3-minikube:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -40,6 +49,20 @@ data:
     owners: {}
     plugins:
       danydo1/app-new:
+      - approve
+      - assign
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - cat
+      - dog
+      - pony
+      danydo1/app1-new:
       - approve
       - assign
       - help
@@ -82,6 +105,9 @@ data:
       trusted_org: danydo1
     - repos:
       - danydo1/app-new
+      trusted_org: danydo1
+    - repos:
+      - danydo1/app1-new
       trusted_org: danydo1
     - repos:
       - danydo1/jx3-minikube
