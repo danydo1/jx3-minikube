@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: danydo1
+    provider: github
+    repository: jx3-minikube
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: danydo1-jx3-minikube
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/danydo1/jx3-minikube.git
+  org: danydo1
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx3-minikube
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/danydo1/jx3-minikube

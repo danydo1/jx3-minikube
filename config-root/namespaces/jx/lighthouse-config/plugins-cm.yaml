@@ -6,6 +6,10 @@ data:
       repos:
       - danydo1/jx3-minikube
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - danydo1/jx3-minikube
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -50,6 +54,9 @@ data:
       xl: 0
       xxl: 0
     triggers:
+    - repos:
+      - danydo1/jx3-minikube
+      trusted_org: danydo1
     - repos:
       - danydo1/jx3-minikube
       trusted_org: danydo1
