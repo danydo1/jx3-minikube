@@ -10,6 +10,7 @@ spec:
     repositories:
     - name: app-new
     - name: app1-new
+    - name: dan
     - name: jx3-minikube
     scheduler: in-repo
   slack:
