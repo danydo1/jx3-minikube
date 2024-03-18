@@ -13,6 +13,7 @@ spec:
     - name: app1-new
     - name: app4
     - name: app5
+    - name: app7
     - name: dan
     - name: jx3-minikube
     scheduler: in-repo
